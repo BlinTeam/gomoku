@@ -2,16 +2,30 @@ import React from 'react'
 import Styles from './Square.module.css'
 
 
-const Square = ({onClick, value}) => {
+const Square = ({value, onClick}) => {
+  const x = String.fromCharCode(9773)
+  const o = String.fromCharCode(9675)
+
   const style = [Styles.square]
-  if (value) style.push(value)
+  if (value == x) {
+    console.log('X')
+    style.push(Styles.x)
+
+  }
+  if (value == o) {
+    console.log('O')
+    style.push(Styles.o)
+  }
 
   return (
       <div>
+
         <button
             className={style.join(' ')}
             onClick={onClick}
-        > &#10006; </button>
+        >
+          {value}
+        </button>
       </div>
   )
 }

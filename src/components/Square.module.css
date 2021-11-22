@@ -1,10 +1,17 @@
 .square {
-    background: greenyellow;
+    background: black;
     border: none;
     font-size: 8rem;
     cursor: pointer;
     width: 150px;
     height: 150px;
-
     outline: none;
+}
+
+.x {
+    color: green;
+}
+
+.o {
+    color: red;
 }

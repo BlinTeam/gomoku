@@ -1,12 +1,16 @@
 import React from 'react'
 import Square from "./Square"
+import Styles from "./Board.module.css"
 
-const Board = ({size, values, step}) => {
+const Board = ({values, step}) => {
   return (
-      <div>
-        {values.map(({it, i} => {
-          <Square value={it} onClick={() => {step(i)}}/>
-        })}
+      <div className={Styles.board}>
+        {values.map((it, i) =>
+          <Square
+              value={it}
+              onClick={() => step(i)}
+          />
+          )}
       </div>
   )
 }
