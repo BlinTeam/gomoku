@@ -3,13 +3,15 @@
     border: none;
     font-size: 8rem;
     cursor: pointer;
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     outline: none;
+    margin: 5px;
 }
 
 .x {
-    color: green;
+    vertical-align: center;
+    color: limegreen;
 }
 
 .o {
