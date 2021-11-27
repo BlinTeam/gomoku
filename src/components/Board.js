@@ -9,7 +9,9 @@ const Board = ({values, step}) => {
             <Square
                 key={i}
                 value={it}
-                onClick={() => step(i)}
+                onClick={() => {
+                  step(i)
+                }}
             />
         )}
       </div>
