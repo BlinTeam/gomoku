@@ -1,0 +1,25 @@
+.toolbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 70px;
+  background-color: SeaGreen;
+  font-size: 30px;
+  font-weight: bold;
+  color: Gold;
+  margin-bottom: 30px;
+  padding: 8px;
+}
+
+.tools {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.danger {
+  color: #F8BBD0;
+  font-size: 20px;
+}
